@@ -56,14 +56,14 @@ function BugReporter({ reportBug }) {
       </button>
       
       {isOpen && (
-        <div className="absolute bottom-full right-0 w-[300px] bg-white border border-gray-300 
+        <div className="absolute bottom-full right-0 w-[300px] bg-gray-400 border border-gray-300 
           rounded p-4 mb-4 shadow-lg">
           <h3 className="mt-0 text-gray-800 font-bold">Report a Bug</h3>
           {selectedElement ? (
             <>
               <p>Element selected! What type of bug is it?</p>
               <select 
-                className="w-full p-2 my-2 border border-gray-300 rounded"
+                className="w-full p-2 my-2 border bg-black border-black rounded"
                 value={selectedBugType} 
                 onChange={(e) => setSelectedBugType(e.target.value)}
               >
@@ -73,7 +73,7 @@ function BugReporter({ reportBug }) {
                 ))}
               </select>
               <button 
-                className={`p-2 ${selectedBugType ? 'bg-blue-500 cursor-pointer' : 'bg-gray-400 cursor-not-allowed'} 
+                className={`p-2 ${selectedBugType ? 'bg-blue-500 cursor-pointer' : 'bg-black cursor-not-allowed'} 
                   text-white rounded mt-2`}
                 onClick={handleReport}
                 disabled={!selectedBugType}
@@ -82,7 +82,7 @@ function BugReporter({ reportBug }) {
               </button>
             </>
           ) : (
-            <p>Click on a buggy element to report it</p>
+            <p className='text-black'>Click on a buggy element to report it</p>
           )}
         </div>
       )}
