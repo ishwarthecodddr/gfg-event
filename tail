@@ -1,0 +1,51 @@
+wind.config.js
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      animation: {
+        'escape': 'escape 0.5s infinite alternate',
+        'jump': 'jump 0.5s infinite alternate',
+        'rotate': 'rotate 2s linear infinite',
+        'rainbow': 'rainbow 1s linear infinite',
+        'typing': 'typing 4s steps(20) infinite',
+      },
+      keyframes: {
+        escape: {
+          '0%': { left: '0', top: '0' },
+          '100%': { left: '20px', top: '-10px' },
+        },
+        jump: {
+          '0%': { transform: 'translateY(0)' },
+          '100%': { transform: 'translateY(-20px)' },
+        },
+        rotate: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+        rainbow: {
+          '0%': { color: 'red' },
+          '14%': { color: 'orange' },
+          '28%': { color: 'yellow' },
+          '42%': { color: 'green' },
+          '57%': { color: 'blue' },
+          '71%': { color: 'indigo' },
+          '85%': { color: 'violet' },
+          '100%': { color: 'red' },
+        },
+        typing: {
+          '0%': { width: '0' },
+          '50%': { width: '100%' },
+          '70%': { width: '100%' },
+          '90%': { width: '0' },
+          '100%': { width: '0' },
+        },
+      },
+    },
+  },
+  plugins: [],
+}
