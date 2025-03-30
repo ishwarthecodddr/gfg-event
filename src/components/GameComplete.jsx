@@ -8,7 +8,8 @@ function GameComplete({ bugsFound, totalBugs, time, restartGame }) {
         <p>You found {bugsFound} out of {totalBugs} bugs</p>
         <p>Your time: {time}</p>
       </div>
-      <button onClick={restartGame}>Play Again</button>
+      <h1>This is your key for next level ! </h1>
+      <h2>A2jkkl34234m2342Q4</h2>
     </div>
   )
 }

@@ -7,7 +7,7 @@ import GameComplete from './components/GameComplete'
 
 function App() {
   const [bugsFound, setBugsFound] = useState(0)
-  const [totalBugs] = useState(15)
+  const [totalBugs] = useState(1)
   const [time, setTime] = useState(0)
   const [isGameRunning, setIsGameRunning] = useState(false)
   const [gameComplete, setGameComplete] = useState(false)
