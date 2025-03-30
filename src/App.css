@@ -4,7 +4,24 @@
   padding: 2rem;
   text-align: center;
 }
+@keyframes flashing-border {
+  0% {
+    border-color: red;
+  }
+  50% {
+    border-color: yellow;
+  }
+  100% {
+    border-color: rgb(239, 66, 158);
+  }
+}
 
+.flashing-border {
+  animation: flashing-border 1s infinite; /* 1-second animation, repeats infinitely */
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 8px; /* Optional: Rounded corners */
+}
 .logo {
   height: 6em;
   padding: 1.5em;

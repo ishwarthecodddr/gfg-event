@@ -49,7 +49,7 @@ function BugReporter({ reportBug }) {
     <div className="fixed bottom-8 right-8 z-50">
       <button 
         className={`py-3 px-6 ${isOpen ? 'bg-orange-700' : 'bg-orange-500'} 
-          text-white rounded font-bold transition-colors`}
+          text-white rounded font-bold transition-colors flashing-border `}
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? 'Cancel' : 'Report Bug'}

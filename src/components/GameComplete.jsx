@@ -1,6 +1,6 @@
 import React from 'react'
 
-function GameComplete({ bugsFound, totalBugs, time, restartGame }) {
+function GameComplete({ bugsFound, totalBugs, time }) {
   return (
     <div className="game-complete">
       <h1>Game Complete!</h1>
