@@ -125,7 +125,7 @@ function BuggyPage() {
       </main>
       
       <footer className="bg-gray-800 text-white text-center p-4 mt-12">
-        <p>© 2025 Bug Hunter Game</p>
+        <p>© 2025 Bug Hunter Game developed by Ishwar</p>
       </footer>
     </div>
   )
