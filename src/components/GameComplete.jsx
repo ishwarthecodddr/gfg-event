@@ -9,7 +9,7 @@ function GameComplete({ bugsFound, totalBugs, time, restartGame }) {
         <p>Your time: {time}</p>
       </div>
       <h1>This is your key for next level ! </h1>
-      <h2>A2jkkl34234m2342Q4</h2>
+      <h2>A2jkkl342</h2>
     </div>
   )
 }
